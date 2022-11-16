@@ -1,3 +1,4 @@
+adc
 #include "esp_wpa2.h"
 #include <WiFi.h>
 #include <HTTPClient.h>
@@ -133,7 +134,7 @@ void sendReading(int moisture, int light, bool debug) {
  * Reads the moisture level
  */
 int readMoisture() {
-  return analogRead(MOISTURE_PIN);
+  return 4095 - analogRead(MOISTURE_PIN);
 }
 
 /*
