@@ -4,6 +4,8 @@
 #define EAP_IDENTITY "identity"
 #define EAP_PASSWORD "password"
 
+#define ENDPOINT "endpoint"
+
 #define MENOPC "Cactus Of Things ESP32 Board"
 
 String line;
